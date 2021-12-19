@@ -4,6 +4,7 @@
    right: 0.5rem;
    color: #fbff00;
 }
+/*Navbar*/
 #menu{
     background-color: aquamarine;
 }
@@ -13,6 +14,7 @@
 #navbarDropdownMenuLink{
     color:rgb(0, 0, 0);
 }
+
 /* Titulos Categoria*/
 
 #categoria-1{
