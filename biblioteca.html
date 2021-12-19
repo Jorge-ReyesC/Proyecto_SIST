@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="icon" href="https://pbs.twimg.com/media/DjtbaunWwAIrqD8?format=jpg&name=large">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' /> 
+        <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+        <script src=”dist/jspdf.min.js”></script>
+        <script src="/assets/js/graficos.js" defer></script>
+        <title>S.I.I.S.T. Biblioteca</title>
+        
+      </head>
+    <body>
+      
+
+      <!-- navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light p-1 fixed-top  " data-navbar-on-scroll="data-navbar-on-scroll"  id="menu" >
+        <div class="container-fluid">
+          <h2 id="menu-text">S.I.I.S.T.</h2>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" id="menu-text">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="biblioteca.html" id="menu-text">Biblioteca</a>
+              </li> 
+              <li class="nav-item ">
+                <a class="nav-link font-weight " href="nosotros.html" id="menu-text">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="seguridad.html" id="menu-text">Política de Seguridad de Tránsito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="victimas.html" id="menu-text">Orientacion a Victimas</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+    </nav>
+      
+      <!-- carousel-->
+      <div class="main">
+        
+        <div class="container my-5  px-xxl-5 mt-0 ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="">
+                  <img src="https://www.conaset.cl/wp-content/uploads/2021/03/MARQUESINA-WEB-01.png" class="d-block w-100" alt="slide 1">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.conaset.cl/nuevas-senales-de-transito/" target="_blank">
+                  <img src="https://www.conaset.cl/wp-content/uploads/2021/03/marquesina-SOAP-2021-01.png" class="d-block w-100" alt="slide 2">
+                  </a>  
+                </div>
+                <div class="carousel-item">
+                  <a href="/nosotros.html">
+                  <img src="assets/imagenes/slides/s1.png" class="d-block w-100" alt="slide 3">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://www.conaset.cl/documentacion-requerida/" target="_blank">
+                  <img src="https://www.conaset.cl/wp-content/uploads/2021/07/marquesina-web-03.png" class="d-block w-100" alt="slide 4">
+                  </a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Secciones o Section-->
+      <!-- rep 1-->
+      <section class="py-1 " id="Rep1" >
+        <div class="container-fluid">
+          <div class="row flex-nowrap">
+            <div class="container- py-5">
+              <div class="row">
+                  <div>
+                    <h2 id="categoria-1" class="text-center text-white py-3"   >
+                      Reporte 1: Meses con recuento de ocurrencias anuales</h2>
+                </div>
+              </div>
+                  <div id="rep-1-2000"></div>
+                <!--botones desplegable  mas informacion y descarga (INICIO)-->       
+                          <div class="container-fluid">
+                            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-5 justify-content-center">
+                              <div class="d-grid">
+                                <p class="d-grid"> 
+                                  <button type="button" class="btn btn-primary " data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                  Mas informacion
+                                  </button>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                  <div class="card card-body">
+                                    El grafico nos muestra los meses obtenidos con mas ocurrencias en el año 2000. Es posible destacar que la tasa promedio de fallecidos es de el 24%. <hr> La informacion obtenida proviene de el observatorio de datos de CONASET
+                                  </div>
+                                </div>
+                              </div>
+                              <button type="button" class="btn btn-outline-success h-25 d-inline-block py-2">Descargar csv</button> 
+                            </div>   
+                          </div>      
+                <!--botones desplegable  mas informacion y descarga (FINAL)-->
+                  <div id="rep-1-2010"></div>
+                  <div id="rep-1-2020"></div>    
+                  <div id="rep-1-total"></div>    
+            </div>
+      </section>
+      <!-- rep 2-->
+      <section class="py-5" id="Rep2" >
+          <div class="container- py-5">
+            <div class="row">
+                <div>
+                  <h2 id="categoria-2" class="text-center text-white py-3"   >
+                    Reporte 2: Horas con recuento de ocurrencias anuales</h2>
+              </div>
+            </div>
+                <div id="rep-2-2000"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </section>
+      <!-- rep 3-->
+      <section class="py-5" id="Rep3" >
+          <div class="container- py-5">
+            <div class="row">
+                <div>
+                  <h2 id="categoria-3" class="text-center text-white py-3"  >
+                    Reporte 3: Dias con más ocurrencias mensuales</h2>
+              </div>
+            </div>
+                <div id="rep-3-03-2019"></div>
+                <div id="rep-3-12-2019"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </section>
+      <!-- rep 4-->
+      <section class="py-5" id="Rep4" >
+          <div class="container-fluid py-5">
+            <div class="row">
+                <div>
+                  <h2 id="categoria-4" class="text-center text-white py-3" >
+                    Reporte 4: Dias con más ocurrencias anuales</h2>
+              </div>
+            </div>
+                <div id="rep-4-2000"></div>
+                <div id="rep-4-2010"></div>
+                <div id="rep-4-2020"></div>
+
+                  </div>
+                </div>
+            </div>
+          </div>
+      </section>
+      <!-- rep 5-->
+      <section class="py-5" id="Rep5" >
+          <div class="container- py-5">
+            <div class="row">
+                <div>
+                  <h2 id="categoria-5" class="text-center text-white py-3"  >
+                    Reporte 5: Regiones con más ocurrencias anuales</h2>
+              </div>
+            </div>
+                <div id="rep-5-2000"></div>
+                <div id="rep-5-2010"></div>
+                <div id="rep-5-2020"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      <!-- rep 6-->  
+        <section class="py-5" id="Rep6" >
+          <div class="container- py-5">
+            <div class="row">
+                <div>
+                  <h2 id="categoria-6" class="text-center text-white py-3"  >
+                    Reporte 6: Recuento de tipos de siniestros anuales</h2>
+              </div>
+            </div>
+
+                <div id="rep-6-2000"></div>
+                <div id="rep-6-2010"></div>
+                <div id="rep-6-2020"></div>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      <!-- rep 7-->  
+        <section class="py-5" id="Rep7" >
+          <div class="container- py-5">
+            <div class="row">
+                <div>
+                  <h2 id="categoria-7" class="text-center text-white py-3"  >
+                    Reporte 7: Calidad de los participantes anuales</h2>
+              </div>
+            </div>
+                <div id="rep-7-2000"></div>
+                <div id="rep-7-2010"></div>
+                <div id="rep-7-2020"></div>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      <!-- rep 8-->  
+        <section class="py-5" id="Rep8" >
+          <div class="container- py-5">
+            <div class="row">
+                <div>
+                  <h2 id="categoria-8" class="text-center text-white py-3"  >
+                    Reporte 8: Edades de participantes anuales</h2>
+              </div>
+            </div>
+            
+                <div id="rep-8-2000"></div>
+                <div id="rep-8-2010"></div>
+                <div id="rep-8-2020"></div>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+
+      <footer class="text-center text-lg-start bg-light text-muted">
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5  d-lg-block ">
+              <span>Siguenos En Nuestras Redes Sociales:</span>
+            </div>
+            <div>
+              <a href="" class="me-4 ">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="" class="me-4 ">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="" class="me-4 ">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="" class="me-4 ">
+                <i class="bi bi-discord"></i>
+              </a>
+              <a href="" class="me-4 ">
+                <i class="bi bi-twitch"></i>
+              </a>
+            </div>
+          </section>
+          <section>
+              <div class="container text-center text-md-start mt-5">
+                
+                <div class="row mt-3">
+                  
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      <i class="fas fa-gem me-3"></i>S.I.I.S.T.
+                    </h6>
+                    <p>
+                      Somos un equipo que busca dar a conocer una mejor la comprensión de los accidentes de tránsito ocurridos en el pais, exponiendo estos hechos tan importantes y como podemos aprender de nuestros propios errores, mediante esta plataforma web 
+                    </p>
+                  </div>
+                  <!--
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                   
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Productos
+                    </h6>
+                    <p>
+                      <a href="#!" class="text-reset">SSD M.2 NVMe</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">SSD M.2 SATA</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">SSD M.2 </a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">SSD M.2 PCIe</a>
+                    </p>
+                  </div>
+                  -->
+          
+                  
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Enlaces directos
+                    </h6>
+                    <p>
+                      <a href="index.html" class="text-reset">Inicio</a>
+                    </p>
+                    <p>
+                      <a href="nosotros.html" class="text-reset">Nosotros</a>
+                    </p>
+                    <p>
+                      <a  class="text-reset">Vehiculos y Vias</a>
+                    </p>
+                    <p>
+                      <a href="" class="text-reset">Biblioteca</a>
+                    </p>
+                    <p>
+                      <a href="" class="text-reset">Politicas de Seguridad de Transito</a>
+                    </p>
+                    <p>
+                      <a href="" class="text-reset">Orientacion a Victimas</a>
+                    </p>
+                  </div>
+                  
+          
+                  
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Contactanos
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> WuashoLandia, WL 943, AUS</p>
+                    <p>
+                      <i class="fas fa-envelope me-3"></i>
+                      WuashoComputer@store.cl
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> +569-15975346</p>
+                    <p><i class="fas fa-print me-3"></i> +569-75315978</p>
+                  </div>
+                  
+                </div>
+                
+              </div>
+    
+          </section>
+          <!-- Copyright -->
+          <div id="fondo-footer" class="text-center p-4" >© 2021 Copyright:
+            <a class="text-reset fw-bold">S.I.I.S.T.</a>
+          </div>
+      
+      </footer>
+        
+        
+
+       
+      <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+      <script src="/assets/js/graficos.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>

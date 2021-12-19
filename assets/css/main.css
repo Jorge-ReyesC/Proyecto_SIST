@@ -1,0 +1,66 @@
+/* Etiqueta de Oferta o promocion */
+#promociones{
+   top: 0.5rem; 
+   right: 0.5rem;
+   color: #fbff00;
+}
+#menu{
+    background-color: aquamarine;
+}
+#menu-text{
+    color:rgb(0, 0, 0);
+}
+#navbarDropdownMenuLink{
+    color:rgb(0, 0, 0);
+}
+/* Titulos Categoria*/
+
+#categoria-1{
+    background-color:rgb(165, 209, 114); 
+    font-size: 25px;
+}
+#categoria-2{
+    background-color:rgb(114, 223, 119); 
+    font-size: 25px;
+}
+#categoria-3{
+    background-color:rgb(114, 224, 182); 
+    font-size: 25px;
+}
+#categoria-4{
+    background-color:rgb(92, 147, 192); 
+    font-size: 25px;
+}
+#categoria-5{
+    background-color:rgb(140, 7, 192); 
+    font-size: 25px;
+}
+#categoria-6{
+    background-color:rgb(177, 7, 192); 
+    font-size: 25px;
+}
+#categoria-7{
+    background-color:rgb(194, 92, 146); 
+    font-size: 25px;
+}
+#categoria-8{
+    background-color:rgb(97, 179, 165); 
+    font-size: 25px;
+}
+/* Fondo para el Copyright del footer */
+
+#fondo-footer{
+    background-color:aquamarine;
+
+}
+#tamanio-comentarios{
+    height: 10rem;
+}
+#tamanio-fotos-nosotros{
+    width: 19rem;
+
+}
+#estilo-titulo{
+    font-family: georgia;
+    font-size: 90px;
+}
